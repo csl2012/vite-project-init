@@ -40,7 +40,7 @@ export function externalObject(obj = {}) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vite-project-init', // 开发或生产环境服务的公共基础路径
+  base: '/vite-project-init/', // 开发或生产环境服务的公共基础路径
   plugins: [
     vue(),
     legacy({

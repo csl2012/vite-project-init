@@ -22,7 +22,7 @@ const cdn = {
 }
 
 export default defineConfig({
-  base: '/vite-project-init',
+  base: '/vite-project-init/',
   plugins: [
     visualizer({
       open: true,
