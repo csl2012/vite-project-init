@@ -8,6 +8,8 @@ import { resolve } from 'path'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import externalGlobals from 'rollup-plugin-external-globals'
+import OptimizationPersist from 'vite-plugin-optimize-persist'
+import PkgConfig from 'vite-plugin-package-config'
 // import viteImagemin from 'vite-plugin-imagemin'
 // import {
 //   AntDesignVueResolver,
@@ -42,6 +44,8 @@ export function externalObject(obj = {}) {
 export default defineConfig({
   // base: '/', // 开发或生产环境服务的公共基础路径
   plugins: [
+    PkgConfig(),
+    OptimizationPersist(),
     vue(),
     legacy({
       targets: ['defaults', 'not IE 11']

@@ -42,6 +42,8 @@
     "vite": "^4.3.9",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-html": "^3.2.0",
+    "vite-plugin-optimize-persist": "^0.1.2",
+    "vite-plugin-package-config": "^0.1.1",
     "vite-plugin-svg-icons": "^2.0.1",
     "vite-plugin-vconsole": "^1.3.1"
   },
